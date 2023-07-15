@@ -1,5 +1,7 @@
 # FOLERDS
 .venv/
+venv/
+env/
 .vscode/
 __pycache__/
 
