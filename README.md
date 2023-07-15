@@ -61,3 +61,5 @@ docker build . -t sidesoft-backend
 ```bash
 docker run --name mysidesoft-back -p 5000:5000 sidesoft-backend
 ```
+
+* Abre el en tu navegador [http://localhost:5000/](http://localhost:5000/)
