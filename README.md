@@ -43,7 +43,7 @@ python3 ./server/index.py
 ```
 ## 2. Usando Docker
 * Ubicate en el directoria del proyecto
-* Configura las variables de entorno del proyecto en la siguiente seccion:
+* Configura las variables de entorno del proyecto en la siguiente seccion en el archivo Dockerfile:
 
 ```
 ENV DEBUG=False
