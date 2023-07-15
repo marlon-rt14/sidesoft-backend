@@ -4,15 +4,6 @@
 * **Virtual Enviornment** - Recomendamos trabajar en un entorno virtual siempre que se utilice Python para proyectos. Esto mantiene tus dependencias para cada proyecto separadas y organizadas. Las instrucciones para configurar un entorno virtual para su plataforma se pueden encontrar en la sección [documentación de python](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 <br>
 
-* **PIP Dependencias** - Una vez que tengas tu entorno virtual configurado y funcionando, instala las dependencias navegando hasta el directorio del proyecto y ejecutando:
-```bash
-# En Windows:
-py -m pip install -r requirements.txt
-# En Linux:
-pip install -r requirements.txt
-```
-Esto instalará todos los paquetes necesarios que seleccionamos en el archivo `requirements.txt`.
-<br>
 * **Activa el entorno virtual**
 
 Antes que nada, activa el entorno virtual corriendo estos comandos:
@@ -26,6 +17,17 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 <br>
+
+* **PIP Dependencias** - Una vez que tengas tu entorno virtual configurado y funcionando, instala las dependencias navegando hasta el directorio del proyecto y ejecutando:
+```bash
+# En Windows:
+py -m pip install -r requirements.txt
+# En Linux:
+pip install -r requirements.txt
+```
+Esto instalará todos los paquetes necesarios que seleccionamos en el archivo `requirements.txt`.
+<br>
+
 
 * **Variables de entorno**
 Renombra el archivo `.env.develop` a `.env` y configura los valores de las varialbes de entorno
