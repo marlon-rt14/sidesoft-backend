@@ -30,10 +30,11 @@ Esto instalará todos los paquetes necesarios que seleccionamos en el archivo `r
 
 
 * **Variables de entorno**
-Renombra el archivo `.env.develop` a `.env` y configura los valores de las varialbes de entorno
+Renombra el archivo `.env.develop` a `.env` y configura los valores de las varialbes de entorno 
 <br>
 
 * **Inicia el servidor**
+Abre el en tu navegador [http://localhost:5000/](http://localhost:5000/)
 ```bash
 # On Windows:
 py ./server/index.py
