@@ -1,0 +1,49 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="container mt-5">
+  <h3>Cantidad total de registros: {{total}}</h3>
+  <br />
+  <h3>Cantidad total de productos diferentes en el stock (agrupar por la propiedad "product")</h3>
+
+  <div class="container-products">
+    {% for group in new_products %}
+    <p>Cantidad total de {{group['product']}}: {{group['quantity']}} (grupos: {{group['rows']|length}})</p>
+    {% endfor %}
+  </div>
+  <br />
+  <h3>
+    Lista de productos cuya unidad de medida (uOM$_identifier) es diferente a "UNIDAD" (se
+    diferencia entre mayúsculas y minúsculas).
+  </h3>
+  <div class="border border-primary border-2 d-flex justify-content-evenly align-items-center text-center gap-3">
+    <div class="table-row">ID Producto</div>
+    <div class="table-row">Producto</div>
+    <div class="table-row">Unidad</div>
+    <div class="table-row">Cantidad</div>
+  </div>
+  {% for product in products_unit %}
+  <div class="border border-info border-1 d-flex justify-content-evenly align-items-center gap-3">
+    <p class="table-row">{{product['product']}}</p>
+    <p class="table-row">{{product['product$_identifier']}}</p>
+    <p class="table-row">{{product['uOM$_identifier']}}</p>
+    <p class="table-row">{{product['quantityOnHand']}}</p>
+  </div>
+  {% endfor %}
+  <br />
+  <h3>Lista de los 10 productos con mayor stock ordenados de mayor a menor.</h3>
+  <div class="border border-primary border-2 d-flex justify-content-evenly align-items-center text-center gap-3">
+    <div class="table-row">ID Producto</div>
+    <div class="table-row">Producto</div>
+    <div class="table-row">Unidad</div>
+    <div class="table-row">Cantidad</div>
+  </div>
+  {% for product in sorted_products %}
+  <div class="border border-info border-1 d-flex justify-content-evenly align-items-center gap-3">
+    <p class="table-row">{{product['product']}}</p>
+    <p class="table-row">{{product['product$_identifier']}}</p>
+    <p class="table-row">{{product['uOM$_identifier']}}</p>
+    <p class="table-row">{{product['quantityOnHand']}}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

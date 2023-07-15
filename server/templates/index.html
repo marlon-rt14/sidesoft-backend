@@ -1,0 +1,20 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>SIDESOFT</h3>
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-center align-items-center ">
+            <p class="m-0">You need to</p>
+            <a href="{{ url_for('router.auth.login') }}" class="btn btn-link">login first</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1 @@
+sidesoft_api = "https://obpreprod.sidesoftcorp.com/comreivicpreprod/org.openbravo.service.json.jsonrest/MaterialMgmtStorageDetail?_selectedProperties=id,product,storageBin,attributeSetValue,uOM,quantityOnHand&_where=quantityOnHand%3E0"

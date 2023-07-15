@@ -1,0 +1,21 @@
+/* 
+* {
+    color: aliceblue;
+}
+
+body {
+    background: #121212;
+} */
+
+.bg-black {
+    background: #090909;
+}
+
+.container-products {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.table-row {
+    flex: 1;
+}
