@@ -42,6 +42,7 @@ py ./server/index.py
 python3 ./server/index.py
 ```
 ## 2. Usando Docker
+* Ubicate en el directoria del proyecto
 * Configura las variables de entorno del proyecto en la siguiente seccion:
 
 ```
@@ -53,7 +54,7 @@ ENV SECRET_KEY=whoismarlon
 
 * Ejecuta el siguiente comando para crear la imagen:
 ```bash
-docker build -it . sidesoft-backend
+docker build . -t sidesoft-backend
 ```
 
 * Crea un contenedor
